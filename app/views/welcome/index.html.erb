@@ -1,2 +1,9 @@
 <h1>Welcome To Your To Do List</h1>
 <p>So much to do....</p>
+
+<% @tasks = ["Be cool", "Say no to drugs"] %>
+<ul>
+    <% @tasks.each do |task| %>
+        <li><%= task %></li>
+    <% end %>
+</ul>
